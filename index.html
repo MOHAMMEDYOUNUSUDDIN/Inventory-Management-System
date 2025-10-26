@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventory Management System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>INVENTORY MAGAGEMENT SYSTEM</h1>
+      <nav>
+        <button class="tab-btn active" data-tab="inventory">Inventory</button>
+        <button class="tab-btn" data-tab="sales">Sales</button>
+        <button class="tab-btn" data-tab="orders">Orders</button>
+      </nav>
+    </header>
+
+    <!-- inventory section -->
+    <main>
+      <section id="inventory" class="tab-content active">
+        <h2>Inventory</h2>
+        <div class="form">
+          <input type="text" id="itemName" placeholder="Item Name" />
+          <input type="number" id="itemQty" placeholder="Quantity" />
+          <input type="number" id="itemPrice" placeholder="Price" />
+          <button id="addItemBtn">Add Item</button>
+        </div>
+        <table id="inventoryTable">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Qty</th>
+              <th>Price</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+
+      <!-- sales section     -->
+      <section id="sales" class="tab-content">
+        <h2>Sales</h2>
+        <div class="form">
+          <input type="text" id="saleItem" placeholder="Item Name" />
+          <input type="number" id="saleQty" placeholder="Quantity Sold" />
+          <button id="addSaleBtn">Record Sale</button>
+        </div>
+        <table id="salesTable">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Qty Sold</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+
+      <!-- orders section   -->
+      <section id="orders" class="tab-content">
+        <h2>Orders</h2>
+        <div class="form">
+          <input type="text" id="orderItem" placeholder="Item Name" />
+          <input type="number" id="orderQty" placeholder="Quantity Ordered" />
+          <button id="addOrderBtn">Add Order</button>
+        </div>
+        <table id="ordersTable">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Qty Ordered</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+    
+  </body>
+</html>
