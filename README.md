@@ -1,4 +1,4 @@
-# 📦 Inventory Management System
+# 📦 Inventory Management System. 
 
 A web-based **Inventory Management System** designed to simplify the process of managing products, monitoring stock levels, and keeping track of sales and inventory-related activities.
 
